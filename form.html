@@ -3,26 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TASK 2 </title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
+    <header>
+        <h1>TASK-2 Ibrahim Kshkieh</h1>
+    </header>
     <div class="form-container">
         <form id="inputForm">
-            <label for="textInput">Text:</label>
-            <input type="text" id="textInput" name="textInput" ><br>
-
-            <label for="emailInput">Email:</label>
-            <input type="email" id="emailInput" name="emailInput" ><br>
-
-            <label for="numberInput">Number:</label>
-            <input type="number" id="numberInput" name="numberInput" ><br>
-
-            <label for="passwordInput">Password:</label>
-            <input type="password" id="passwordInput" name="passwordInput" ><br>
-
-            <button type="submit">Submit</button>
+            <div class="form-group">
+                <label for="textInput">User Number:</label>
+                <input type="text" id="textInput" name="textInput" maxlength="10"  required>
+            </div>
+            
+            <div class="form-group">
+                <label for="emailInput">Email(s):</label>
+                <input type="text" id="emailInput" name="emailInput" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="numberInput">Number:</label>
+                <input type="number" id="numberInput" name="numberInput" value="1" min="1" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="passwordInput">Password:</label>
+                <div class="password-wrapper">
+                    <input type="password" id="passwordInput" name="passwordInput" required>
+                    <button type="button" id="togglePassword" class="eye-icon">&#128065;</button>
+                </div>
+            </div>
+            
+            <button type="submit" class="submit-btn">Submit</button>
         </form>
     </div>
     <script src="scripts.js"></script>
